@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Text, HStack, Button, Box, chakra } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 type List = {
   title: string;
@@ -26,7 +27,9 @@ export default function Hub() {
   return (
     <>
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
-        <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
+        <Link href={"/"}>
+          <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
+        </Link>
       </Flex>
       <Text
         textAlign={"center"}
