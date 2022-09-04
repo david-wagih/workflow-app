@@ -2,8 +2,10 @@ import React from "react";
 import { Flex, Text, HStack, Button, Box } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useCookies } from "react-cookie";
 
 export default function Header() {
+  const [cookies, setCookie, removeCookie] = useCookies(["token"]);
   return (
     <>
       <HStack
@@ -32,7 +34,12 @@ export default function Header() {
               display={"flex"}
               _hover={{ filter: "brightness(0.8)" }}
             >
-              <Image src={"/Group954.svg"} height={"52px"} width={"77px"} />
+              <Image
+                alt=""
+                src={"/Group954.svg"}
+                height={"52px"}
+                width={"77px"}
+              />
             </Button>
           </Link>
           <Link href={"/"}>
@@ -81,16 +88,43 @@ export default function Header() {
             </Button>
           </Link>
           <Link href={"/login"}>
-            <Button
-              w={"70px"}
-              bgColor={"#82B5A5"}
-              borderRadius={"100px"}
-              variant={"unstyled"}
-              transition={"all 0.3s ease-in-out"}
-              _hover={{ bgColor: "#6fa492", color: "black" }}
+            <div
+              style={{
+                display: cookies.token ? "none" : "block",
+              }}
             >
-              Login
-            </Button>
+              <Button
+                w={"70px"}
+                bgColor={"#82B5A5"}
+                borderRadius={"100px"}
+                variant={"unstyled"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{ bgColor: "#6fa492", color: "black" }}
+              >
+                Login
+              </Button>
+            </div>
+          </Link>
+          <Link href={"#"}>
+            <div
+              style={{
+                display: cookies.token ? "block" : "none",
+              }}
+              onClick={() => {
+                removeCookie("token");
+              }}
+            >
+              <Button
+                w={"100px"}
+                bgColor={"#82B5A5"}
+                borderRadius={"100px"}
+                variant={"unstyled"}
+                transition={"all 0.3s ease-in-out"}
+                _hover={{ bgColor: "#6fa492", color: "black" }}
+              >
+                Logout
+              </Button>
+            </div>
           </Link>
         </Flex>
       </HStack>
