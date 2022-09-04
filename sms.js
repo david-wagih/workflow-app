@@ -1,5 +1,5 @@
-const accountSid = "AC44a844465896e341d4d510c1bac809f3";
-const authToken = "6db3323bb09e319040b99ffcd23d3066";
+const accountSid = "xxxxx";
+const authToken = "xxxxx";
 const client = require('twilio')(accountSid, authToken);
 let recipient = "+14083686126";
 let code = getCode()
