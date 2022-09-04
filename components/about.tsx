@@ -24,18 +24,16 @@ export default function About() {
         </Text>
       </Flex>
       <Flex alignItems={"center"} mt={"120px"} flexDirection={"column"}>
-        <Image src={"/Group 955.png"} width={"936px"} height={"363px"} />
+        <Image alt="" src={"/Group 955.png"} width={"936px"} height={"363px"} />
         <Box my={"100px"}>
-          <Image src={"/Group 3.png"} width={"1130px"} height={"442px"} />
+          <Image
+            alt=""
+            src={"/Group 3.png"}
+            width={"1130px"}
+            height={"442px"}
+          />
         </Box>
       </Flex>
-      {/* <Box className={"header"} position={"absolute"} mt={"120px"}>
-        <Image
-          src={"/scribbles-scribbles-52 1.svg"}
-          width={"355px"}
-          height={"385px"}
-        />
-      </Box> */}
     </>
   );
 }

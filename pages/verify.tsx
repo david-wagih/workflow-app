@@ -7,7 +7,7 @@ export default function verify() {
     <>
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
         <Link href={"/"}>
-          <Image src={"/Workflow.svg"} width={"122px"} height={"22"} />
+          <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
         </Link>
       </Flex>
       <Text

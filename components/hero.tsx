@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <>
       <Flex justifyContent={"center"} pt={"32px"} id={"logo"}>
-        <Image src={"/Workflow.svg"} width={"122px"} height={"22"} />
+        <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
       </Flex>
       <Box position={"relative"}>
         <Box textAlign={"center"} position={"absolute"} w={"100%"} pt={"45px"}>
@@ -73,12 +73,14 @@ export default function Hero() {
           my={"80px"}
         >
           <Image
+            alt=""
             src={"/pablo-241 1.png"}
             width={"420px"}
             height={"657px"}
             className={"animate__animated animate__slideInLeft"}
           />
           <Image
+            alt=""
             src={"/pablo-240 1.png"}
             width={"420px"}
             height={"657px"}

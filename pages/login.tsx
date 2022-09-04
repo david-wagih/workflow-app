@@ -96,7 +96,7 @@ const Login = () => {
           </Button>
           <Flex justifyContent={"center"}>
             <Text color={"black"}>
-              Don't have an account? {"   "}
+              not having an account? {"   "}
               <chakra.span color={"primary.50"}>
                 <Link href={"/signup"} className={"Link"}>
                   Sign up

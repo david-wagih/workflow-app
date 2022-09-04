@@ -7,7 +7,7 @@ export default function Features() {
     <>
       <Box h={"100%"} bgColor={"#A79CA2"}>
         <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
-          <Image src={"/Workflow.svg"} width={"122px"} height={"22"} />
+          <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
         </Flex>
         <VStack mt={"50px"}>
           <Text
@@ -27,7 +27,12 @@ export default function Features() {
           >
             Made for you and only you in mind.
           </Text>
-          <Image src={"/Group 956.png"} width={"897px"} height={"310px"} />
+          <Image
+            alt=""
+            src={"/Group 956.png"}
+            width={"897px"}
+            height={"310px"}
+          />
         </VStack>
         <VStack
           mt={"100px"}
@@ -44,7 +49,12 @@ export default function Features() {
             border={"1px solid #000"}
           ></Box>
           <Box mt={"22px"}>
-            <Image src={"/techStack.png"} width={"129px"} height={"114px"} />
+            <Image
+              alt=""
+              src={"/techStack.png"}
+              width={"129px"}
+              height={"114px"}
+            />
           </Box>
         </VStack>
       </Box>

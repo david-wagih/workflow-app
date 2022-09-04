@@ -16,7 +16,12 @@ export default function Team() {
           id={"team"}
         ></Box>
         <Box pt={"100px"} pb={"180px"}>
-          <Image src={"/Group 957.png"} width={"1080px"} height={"347"} />
+          <Image
+            alt=""
+            src={"/Group 957.png"}
+            width={"1080px"}
+            height={"347"}
+          />
         </Box>
       </VStack>
     </>
