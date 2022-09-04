@@ -3,7 +3,7 @@ import { Flex, Text, VStack, Button, Box, Input } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function login() {
+const Login = () => {
   return (
     <>
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
@@ -17,7 +17,6 @@ export default function login() {
           />
         </Link>
       </Flex>
-      <Text>Login</Text>
       <Box display={"flex"} justifyContent={"center"} mt={"100px"}>
         <Flex
           w={"317px"}
@@ -41,8 +40,8 @@ export default function login() {
           </Button>
           <Flex justifyContent={"center"}>
             <Text color={"black"}>
-              Don't have an account?
-              <Link href={"/login"} className={"Link"}>
+              no account?
+              <Link href={"/signup"} className={"Link"}>
                 Sign up
               </Link>
             </Text>
@@ -51,4 +50,6 @@ export default function login() {
       </Box>
     </>
   );
-}
+};
+
+export default Login;
