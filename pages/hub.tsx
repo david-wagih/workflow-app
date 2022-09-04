@@ -28,7 +28,6 @@ export default function Hub() {
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
         <Image src={"/Workflow.svg"} width={"122px"} height={"22"} />
       </Flex>
-
       <Text
         textAlign={"center"}
         color={"black"}

@@ -92,3 +92,16 @@ a {
   border-bottom: 1px solid rgb(95, 95, 95);
   color: black;
 }
+
+.login-input1 {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(95, 95, 95);
+  color: black;
+  background-color: transparent;
+}
+
+.login-input1:focus {
+  outline: none;
+}

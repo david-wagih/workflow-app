@@ -30,7 +30,7 @@ const SignUp = () => {
       if (newUser) {
         const newUserJson = await newUser.json();
         console.log(newUserJson);
-        router.push("/login");
+        router.push("/verify");
       } else {
         alert("Something went wrong");
       }
