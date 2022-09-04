@@ -22,7 +22,7 @@ const Login = () => {
   // so here is the logic for the login
 
   const handleLogin = async () => {
-    const login = await fetch(`${config.host}/api/login`, {
+    const login = await fetch(`http://localhost:3001/api/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

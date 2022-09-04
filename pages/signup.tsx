@@ -17,7 +17,7 @@ const SignUp = () => {
       alert("Emails do not match");
       return;
     } else {
-      const newUser = await fetch(`${config.host}/api/register`, {
+      const newUser = await fetch(`http://localhost:3001/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
