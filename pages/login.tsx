@@ -38,6 +38,14 @@ export default function login() {
           <Button variant={"ghost"} colorScheme={"green"}>
             Submit
           </Button>
+          <Flex justifyContent={"center"}>
+            <Text color={"black"}>
+              Don't have an account?
+              <Link href={"/login"} className={"Link"}>
+                Sign up
+              </Link>
+            </Text>
+          </Flex>
         </Flex>
       </Box>
     </>
