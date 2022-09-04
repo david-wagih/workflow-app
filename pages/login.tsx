@@ -9,6 +9,7 @@ export default function login() {
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
         <Link href={"/"}>
           <Image
+            alt=""
             src={"/Workflow.svg"}
             width={"122px"}
             height={"22"}
