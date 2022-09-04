@@ -32,6 +32,11 @@ export default function signup() {
           <input className="login-input" placeholder="Email" type={"email"} />
           <input
             className="login-input"
+            placeholder="Confirm Email"
+            type={"email"}
+          />
+          <input
+            className="login-input"
             placeholder="Phone #"
             type={"number"}
           />
