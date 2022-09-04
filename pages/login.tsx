@@ -41,7 +41,7 @@ export default function login() {
           <Flex justifyContent={"center"}>
             <Text color={"black"}>
               Don't have an account?
-              <Link href={"/login"} className={"Link"}>
+              <Link href={"/signup"} className={"Link"}>
                 Sign up
               </Link>
             </Text>
