@@ -1,5 +1,13 @@
 import React from "react";
-import { Flex, Text, VStack, Button, Box, Input } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  VStack,
+  Button,
+  Box,
+  Input,
+  chakra,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { config } from "../config";
@@ -46,7 +54,14 @@ const Login = () => {
           />
         </Link>
       </Flex>
-      <Box display={"flex"} justifyContent={"center"} mt={"100px"}>
+
+      <Flex justifyContent={"center"} mt={"80px"}>
+        <Text fontSize={"72px"} fontWeight={"800"} color={"black"}>
+          Login
+        </Text>
+      </Flex>
+      <Box display={"flex"} justifyContent={"center"} mt={"70px"}>
+
         <Flex
           w={"317px"}
           h={"376px"}
@@ -82,10 +97,14 @@ const Login = () => {
           </Button>
           <Flex justifyContent={"center"}>
             <Text color={"black"}>
-              no account?
-              <Link href={"/signup"} className={"Link"}>
-                Sign up
-              </Link>
+
+              Don't have an account? {"   "}
+              <chakra.span color={"primary.50"}>
+                <Link href={"/signup"} className={"Link"}>
+                  Sign up
+                </Link>
+              </chakra.span>
+
             </Text>
           </Flex>
         </Flex>

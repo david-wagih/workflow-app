@@ -91,9 +91,11 @@ const SignUp = () => {
           >
             Submit
           </Button>
-          <Text color={"black"}>
-            already have a account? <Link href={"/login"}>login</Link>
-          </Text>
+          <Flex justifyContent={"center"}>
+            <Text color={"black"}>
+              already have a account? <Link href={"/login"}>login</Link>
+            </Text>
+          </Flex>
         </Flex>
       </Box>
     </>
