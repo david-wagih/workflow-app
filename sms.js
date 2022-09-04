@@ -17,7 +17,9 @@ client.messages
 }
 
 
-  function getCode()
+async function getCode()
   {
     return Math.trunc((Math.random()*100000));
   }
+
+  export default sendOTP
