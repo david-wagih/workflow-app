@@ -1,7 +1,11 @@
 const accountSid = "xxxxx";
 const authToken = "xxxxx";
 const client = require('twilio')(accountSid, authToken);
-let recipient = "+14083686126";
+// let recipient = "+14083686126";
+let code = getCode()
+
+async function sendOTP(recipient)
+{
 let code = getCode()
 client.messages
   .create({
@@ -10,6 +14,7 @@ client.messages
      to: `${recipient}`
    })
   .then(message => console.log(message.sid));
+}
 
 
   function getCode()
