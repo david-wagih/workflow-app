@@ -44,6 +44,9 @@ export default function signup() {
           <Button variant={"ghost"} colorScheme={"green"}>
             Submit
           </Button>
+          <Text color={"black"}>
+            already have a account? <Link href={"/login"}>login</Link>
+          </Text>
         </Flex>
       </Box>
     </>
