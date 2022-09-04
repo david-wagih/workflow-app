@@ -26,7 +26,7 @@ export default function Hub() {
   return (
     <>
       <Flex justifyContent={"center"} pt={"32px"} id={"features"}>
-        <Image src={"/Workflow.svg"} width={"122px"} height={"22"} />
+        <Image alt="" src={"/Workflow.svg"} width={"122px"} height={"22"} />
       </Flex>
       <Text
         textAlign={"center"}
@@ -41,6 +41,7 @@ export default function Hub() {
         {list.map((i) => {
           return (
             <Box
+              key={i.title}
               width={"300px"}
               height={"400px"}
               bgColor={"primary.50"}

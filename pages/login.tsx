@@ -36,7 +36,7 @@ const Login = () => {
     console.log(loginJSON);
     if (loginJSON) {
       setCookie("token", loginJSON.token);
-      router.push("/");
+      router.push("/hub");
     } else {
       alert("error");
     }
