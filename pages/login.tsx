@@ -36,7 +36,7 @@ const Login = () => {
     console.log(loginJSON);
     if (loginJSON) {
       setCookie("token", loginJSON.token);
-      router.push("/");
+      router.push("/hub");
     } else {
       alert("error");
     }
@@ -61,7 +61,6 @@ const Login = () => {
         </Text>
       </Flex>
       <Box display={"flex"} justifyContent={"center"} mt={"70px"}>
-
         <Flex
           w={"317px"}
           h={"376px"}
@@ -97,14 +96,12 @@ const Login = () => {
           </Button>
           <Flex justifyContent={"center"}>
             <Text color={"black"}>
-
-              Don't have an account? {"   "}
+              not having an account? {"   "}
               <chakra.span color={"primary.50"}>
                 <Link href={"/signup"} className={"Link"}>
                   Sign up
                 </Link>
               </chakra.span>
-
             </Text>
           </Flex>
         </Flex>
