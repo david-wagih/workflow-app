@@ -101,21 +101,4 @@ const SignUp = () => {
   );
 };
 
-export async function getStaticProps(context: any) {
-  const accountSid = config.accountSid;
-  const authToken = config.authToken;
-  const client = require("twilio")(accountSid, authToken);
-  // let recipient = "+14083686126";
-  client.messages
-    .create({
-      body: `Here is your verification code: 12345`,
-      from: "+16188512034",
-      to: `+14083686126`,
-    })
-    .then((message: any) => console.log(message.sid));
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-}
-
 export default SignUp;
