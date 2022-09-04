@@ -1,7 +1,7 @@
 const sgMail = require('@sendgrid/mail');
 let recipient = "nakul.indus@gmail.com"
 let code = getCode();
-sgMail.setApiKey('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');
+sgMail.setApiKey('XXXXXXX');
 const msg = {
   to: `${recipient}`,
   from: 'josephmcgold@gmail.com', // Use the email address or domain you verified above
